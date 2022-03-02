@@ -8,6 +8,7 @@
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -48,13 +49,13 @@ height: 200px;
 
 @media only screen and (min-width: 1000px) {
     .navbar-links li {
-        transform: translateX(40vw);
+        transform: translateX(0vw);
     }
 }
 
 @media only screen and (max-width: 1000px) {
     .navbar-links li {
-        transform: translateX(20vw);
+        transform: translateX(0vw);
     }
 }
 
@@ -85,6 +86,13 @@ display: flex;
 max-height:1000px;
 transform: translate(-200px,-200px);
 width: 1500px;
+}
+
+.carousel-container {
+    display: flex;
+    max-height: 1000px;
+    transform: translate(-200px,-200px);
+    width: 1500px;
 }
 
 .shape2 {
@@ -140,4 +148,86 @@ z-index: 10;
     .shape-1 {
        display: none;
     }
+}
+.text-bar {
+width: 100%;
+}
+.bar-image {
+    width: 155%;
+    transform: translate(-300px,-150px) !important;
+}
+
+@media only screen and (min-width: 1340px) {
+    .office-image {
+        transform: translate(-100px,-750px);
+        width: 500px !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .office-image {
+        transform: translate(0px,-750px);
+        width: 500px !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .office-image {
+        transform: translate(0px,-750px);
+        width: 500px !important;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .office-image {
+        transform: translate(0px,-750px);
+        width: 500px !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .office-image {
+        display: none;
+    }
+
+    .bar-image {
+    width:180%;
+    }
+
+    .bar-text {
+        color: white;
+        transform: translate(200px,-550px) !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .office-image {
+        display: none;
+    }
+
+    .bar-image {
+        width: 180%;
+    }
+
+    .bar-text {
+        color: white;
+        transform: translate(0px,-450px) !important;
+    }
+}
+.office-image {
+    transform: translate(0px,-700px);
+    width: 500px !important;
+}
+
+.bar-text {
+  color: white;
+  transform: translate(600px,-1000px);
+}
+
+.bar-button {
+    background-color: white;
+    color: plum;
+    border: 0px;
+    border-radius: 25px;
+    padding: 20px;
 }
